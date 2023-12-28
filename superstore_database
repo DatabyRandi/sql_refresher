@@ -1,0 +1,19 @@
+select *
+from superstore
+order by price
+
+select avg(price)
+from superstore 
+where category = 'Electronics'
+
+select avg(price)
+from superstore
+where category = 'Furnishings'
+
+select sum(price)
+from superstore
+where category = 'Kitchen Supplies'
+
+select sum(stock_quantity) as total_electronic_items_in_stock
+from superstore
+where category = 'Electronics'
